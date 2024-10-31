@@ -1,8 +1,8 @@
-# {CUSTOMER_NAME} Playwright Test Suite
-This repository contains Ranger’s automated end-to-end tests for {CUSTOMER_NAME}.
+# CUSTOMER_NAME Playwright Test Suite
+This repository contains Ranger’s automated end-to-end tests for CUSTOMER_NAME.
 
 ## Overview
-These tests are designed to validate critical user journeys and functionality across {CUSTOMER_NAME}'s web applications. The test suite uses Playwright, a modern end-to-end testing framework that enables reliable cross-browser testing.
+These tests are designed to validate critical user journeys and functionality across CUSTOMER_NAME's web applications. The test suite uses Playwright, a modern end-to-end testing framework that enables reliable cross-browser testing.
 
 ## Prerequisites
 - Node.js version 22 or higher
@@ -13,8 +13,8 @@ These tests are designed to validate critical user journeys and functionality ac
 
 ### 1. Clone the Repository
 ```bash
-git clone {REPOSITORY_URL}
-cd {REPOSITORY_NAME}
+git clone REPOSITORY_URL
+cd REPOSITORY_NAME
 ```
 
 ### 2. Install Dependencies
@@ -41,7 +41,7 @@ npx playwright install
 
 Example `.env` structure:
 ```plaintext
-BASE_URL=https://{CUSTOMER_DOMAIN}
+BASE_URL=https://your-domain.com/
 TEST_USERNAME=your-username
 TEST_PASSWORD=your-password
 ```
