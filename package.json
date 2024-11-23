@@ -1,5 +1,5 @@
 {
-    "name": "REPOSITORY_NAME",
+    "name": "qa-eng-interview",
     "version": "1.0.0",
     "description": "",
     "scripts": {
@@ -8,7 +8,7 @@
     "dependencies": {
         "@playwright/test": "^1.45.1",
         "axios": "^1.7.7",
-        "dotenv": "^16.3.1",
+        "dotenv": "^16.4.5",
         "winston": "^3.14.2"
     },
     "prettier": {

@@ -1,72 +1,61 @@
-# CUSTOMER_NAME Playwright Test Suite
-This repository contains Ranger’s automated end-to-end tests for CUSTOMER_NAME.
+# Technical Assessment for QA Engineer
 
 ## Overview
-These tests are designed to validate critical user journeys and functionality across CUSTOMER_NAME's web applications. The test suite uses Playwright, a modern end-to-end testing framework that enables reliable cross-browser testing.
+This is a technical assessment for QA Engineer candidates at Ranger. You'll be working with Playwright tests for a todo application.
 
-## Prerequisites
-- Node.js version 22 or higher
-- npm (usually comes with Node.js)
-- Git
+Your task is to finish four tests generated for [TodoMVC](https://demo.playwright.dev/todomvc/):
+- Adding todos
+- Editing a todo
+- Removing a todo
+- Clearing all todos
 
-## Initial Setup
+You'll have 30 minutes to work on this independently, followed by a code review discussion. You may use the Internet while working on this task.
 
-### 1. Clone the Repository
-```bash
-git clone REPOSITORY_URL
-cd REPOSITORY_NAME
+## Project Structure
+```
+src/lib/
+├── tests/
+│   ├── all.test.ts         # Main test suite
+│   ├── addTodos.ts         
+│   ├── editTodo.ts         
+│   ├── removeTodo.ts       
+│   └── clearAllTodos.ts    
+└── playwright.config.ts    
 ```
 
-### 2. Install Dependencies
-Install the project dependencies:
+## What We're Looking For
+- Fix any flaky locators
+- Remove unnecessary steps
+- Add meaningful assertions using Playwright's `expect` ([docs](https://playwright.dev/docs/test-assertions))
+- Make the tests reliable and maintainable
+
+## Setup
+
+### Requirements
+- Node.js v22+
+- npm
+
+### Quick Start
 ```bash
+# Install dependencies
 npm install
-```
 
-### 3. Install Playwright Browsers
-Install the required browser executables:
-```bash
+# Install Playwright browsers
 npx playwright install
-```
-
-### 4. Environment Configuration
-1. Create a `.env` file in the root directory
-2. Copy the contents from `.env.example` to `.env`
-3. Update the values in `.env` with your configuration
-
-**Important Notes:**
-- The `.env` file is excluded from version control (via `.gitignore`)
-- When adding new environment variables, always update `.env.example`
-- Never commit sensitive information to the repository
-
-Example `.env` structure:
-```plaintext
-BASE_URL=https://your-domain.com/
-TEST_USERNAME=your-username
-TEST_PASSWORD=your-password
 ```
 
 ## Running Tests
 
-### Run All Tests
 ```bash
+# Run all tests
 npm run test
+
+# Run a specific test
+npm run test tests/[filename].ts
+
+# Debug a test (after adding .only to the test you want to debug)
+npm run test -- --debug
 ```
 
-### Run Specific Test File
-```bash
-npm run test tests/path/to/test.spec.ts
-```
-
-### Debug Tests
-To debug a specific test:
-1. Add `.only` to the test you want to debug:
-   ```typescript
-   test.only('your test name', async ({ page }) => {
-     // test code
-   });
-   ```
-2. Run with debugging enabled:
-   ```bash
-   npm run test -- --debug
-   ```
+## Need Help?
+If you run into any technical issues during the assessment, let your interviewer know.
